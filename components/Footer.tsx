@@ -64,7 +64,7 @@ export default function Footer() {
                   <rect x="2" y="3" width="12" height="10" rx="2" stroke="#00d4ff" strokeWidth="1.3" />
                   <path d="M2 6l6 4 6-4" stroke="#00d4ff" strokeWidth="1.3" />
                 </svg>
-                hello@milestoneglobalit.co.uk
+                me@milestoneglobalit.co.uk
               </li>
               <li className="flex items-start gap-2">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-0.5 shrink-0">
@@ -87,13 +87,14 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
           <span>© {new Date().getFullYear()} Milestone Global IT Limited. All rights reserved.</span>
-          <span className="flex items-center gap-1.5">
-            <span
-              className="inline-block w-1.5 h-1.5 rounded-full"
-              style={{ background: 'linear-gradient(135deg,#00d4ff,#8b5cf6)' }}
-            />
-            Built with AI by Milestone Global IT Limited
-          </span>
+          <div className="flex items-center gap-4">
+            <a href="/privacy-policy" className="hover:text-[#00d4ff] transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:text-[#00d4ff] transition-colors">
+              Terms & Conditions
+            </a>
+          </div>
         </div>
       </div>
     </footer>

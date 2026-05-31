@@ -4,17 +4,30 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background video */}
+      {/* Background video — desktop only */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        preload="auto"
+        poster="/A.jpg"
+        className="absolute inset-0 w-full h-full object-cover hidden md:block"
         style={{ zIndex: 0 }}
       >
         <source src="/VID.mp4" type="video/mp4" />
       </video>
+
+      {/* Static image fallback — mobile */}
+      <div
+        className="absolute inset-0 md:hidden"
+        style={{
+          zIndex: 0,
+          backgroundImage: 'url(/A.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
 
       {/* Dark gradient overlay — keeps text crisp while showing the video */}
       <div
