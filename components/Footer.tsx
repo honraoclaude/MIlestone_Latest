@@ -36,7 +36,6 @@ export default function Footer() {
                   key={s.label}
                   href="#"
                   aria-label={s.name}
-                  onClick={(e) => e.preventDefault()}
                   className="w-9 h-9 rounded-lg glass-card flex items-center justify-center text-xs text-slate-500 hover:text-[#00d4ff] transition-colors"
                 >
                   {s.label}
