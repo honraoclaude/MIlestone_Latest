@@ -115,7 +115,7 @@ export default function ChatWidget() {
         <div
           className="glass-card flex flex-col overflow-hidden"
           style={{
-            width: '380px',
+            width: 'min(380px, calc(100vw - 32px))',
             height: '520px',
             boxShadow: '0 25px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,212,255,0.12)',
           }}

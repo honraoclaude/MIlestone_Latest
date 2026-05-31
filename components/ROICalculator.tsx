@@ -139,7 +139,7 @@ export default function ROICalculator() {
               </div>
               <div className="flex-1">
                 <div className="text-xs text-slate-500 uppercase tracking-wider mb-1">Payback period</div>
-                <div className="text-3xl font-black" style={{ color: '#a78bfa' }}>{paybackLabel}</div>
+                <div className="text-3xl font-black text-[#8b5cf6]">{paybackLabel}</div>
                 <div className="text-xs text-slate-600 mt-0.5">based on our standard automation package</div>
               </div>
             </div>

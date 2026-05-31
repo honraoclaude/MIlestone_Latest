@@ -25,15 +25,22 @@ export default function Footer() {
               Intelligent AI solutions for local and national businesses. Helping you
               automate, grow, and thrive with cutting-edge AI agent technology.
             </p>
-            {/* Social placeholders */}
+            {/* Social placeholders — update hrefs when profiles are live */}
             <div className="flex gap-3">
-              {['LI', 'TW', 'GH'].map((s) => (
-                <div
-                  key={s}
-                  className="w-9 h-9 rounded-lg glass-card flex items-center justify-center text-xs text-slate-500 hover:text-[#00d4ff] cursor-pointer transition-colors"
+              {[
+                { label: 'LI', name: 'LinkedIn' },
+                { label: 'TW', name: 'X / Twitter' },
+                { label: 'GH', name: 'GitHub' },
+              ].map((s) => (
+                <a
+                  key={s.label}
+                  href="#"
+                  aria-label={s.name}
+                  onClick={(e) => e.preventDefault()}
+                  className="w-9 h-9 rounded-lg glass-card flex items-center justify-center text-xs text-slate-500 hover:text-[#00d4ff] transition-colors"
                 >
-                  {s}
-                </div>
+                  {s.label}
+                </a>
               ))}
             </div>
           </div>

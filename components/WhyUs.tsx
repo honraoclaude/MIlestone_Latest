@@ -49,9 +49,9 @@ const stats = [
     ),
   },
   {
-    value: '50+',
-    label: 'Automations Deployed',
-    sub: 'Across sectors',
+    value: 'Automation-First',
+    label: 'Our Approach',
+    sub: 'Every project fully automated from day one',
     color: '#00d4ff',
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">

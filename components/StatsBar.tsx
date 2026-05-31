@@ -59,7 +59,7 @@ export default function StatsBar() {
   }, [triggered])
 
   return (
-    <section ref={sectionRef} className="py-20 px-6 relative overflow-hidden">
+    <section ref={sectionRef} className="py-24 px-6 relative overflow-hidden">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0,212,255,0.05) 0%, transparent 70%)' }}
@@ -71,7 +71,7 @@ export default function StatsBar() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#00d4ff]" />
             Real Business Impact
           </div>
-          <h2 className="text-3xl md:text-4xl font-black text-white">
+          <h2 className="text-4xl md:text-5xl font-black text-white">
             What AI Does for <span className="gradient-text">Local Businesses</span>
           </h2>
         </div>
