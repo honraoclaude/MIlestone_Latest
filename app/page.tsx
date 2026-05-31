@@ -5,6 +5,7 @@ import AutomationDemo from '@/components/AutomationDemo'
 import StatsBar from '@/components/StatsBar'
 import HowItWorks from '@/components/HowItWorks'
 import ProcessVisualiser from '@/components/ProcessVisualiser'
+import ROICalculator from '@/components/ROICalculator'
 import WhyUs from '@/components/WhyUs'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
@@ -20,6 +21,7 @@ export default function Home() {
       <AutomationDemo />
       <HowItWorks />
       <ProcessVisualiser />
+      <ROICalculator />
       <WhyUs />
       <ContactForm />
       <Footer />
