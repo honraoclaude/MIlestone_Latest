@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import PrintButton from '@/components/PrintButton'
 
 export const metadata: Metadata = {
   title: 'Scan to Visit — Milestone Global IT Limited',
@@ -42,14 +43,7 @@ export default function QRCodePage() {
           <p className="text-slate-400 text-sm mt-2">AI Agent Services for UK Businesses</p>
         </div>
 
-        {/* Print button — hidden when printing */}
-        <button
-          onClick={() => window.print()}
-          className="print:hidden mt-2 px-6 py-3 rounded-lg text-white text-sm font-semibold"
-          style={{ background: 'linear-gradient(135deg, #00d4ff, #8b5cf6)' }}
-        >
-          Print / Save as PDF
-        </button>
+        <PrintButton />
 
         <p className="print:hidden text-xs text-slate-400 text-center">
           Right-click the QR code and save as image to use on business cards or flyers.
