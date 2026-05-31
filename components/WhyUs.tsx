@@ -104,7 +104,7 @@ export default function WhyUs() {
                 {s.icon}
               </div>
               <div
-                className="text-3xl font-black mb-1"
+                className={`${s.value.length > 9 ? 'text-base leading-snug' : 'text-3xl'} font-black mb-1`}
                 style={{ color: s.color }}
               >
                 {s.value}
