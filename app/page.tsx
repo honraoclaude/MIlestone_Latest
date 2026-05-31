@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import AutomationDemo from '@/components/AutomationDemo'
+import StatsBar from '@/components/StatsBar'
 import HowItWorks from '@/components/HowItWorks'
 import WhyUs from '@/components/WhyUs'
 import ContactForm from '@/components/ContactForm'
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <StatsBar />
       <AutomationDemo />
       <HowItWorks />
       <WhyUs />
