@@ -4,6 +4,7 @@ import Services from '@/components/Services'
 import AutomationDemo from '@/components/AutomationDemo'
 import StatsBar from '@/components/StatsBar'
 import HowItWorks from '@/components/HowItWorks'
+import ProcessVisualiser from '@/components/ProcessVisualiser'
 import WhyUs from '@/components/WhyUs'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
@@ -18,6 +19,7 @@ export default function Home() {
       <StatsBar />
       <AutomationDemo />
       <HowItWorks />
+      <ProcessVisualiser />
       <WhyUs />
       <ContactForm />
       <Footer />
